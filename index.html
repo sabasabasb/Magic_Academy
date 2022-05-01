@@ -3,12 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | MagicAcademy</title>
+    <title>まほがくキャラ一覧</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="main.css">
+    <meta name="twitter:card" content="Summary"/>
+    <meta property="og:url" content="https://sabasabasb.github.io/Magic_Academy/" /> <!--③-->
+    <meta property="og:title" content="まほがくキャラ一覧" /> <!--④-->
+    <meta property="og:description" content="魔法学園のキャラクターまとめサイトです" /> <!--⑤-->
+    <meta property="og:image" content="https://sabasabasb.github.io/Magic_Academy/pageicon.png" /> <!--⑥-->
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
+      UnityLoader.SystemInfo.mobile = false;
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/MA_Build.json", {onProgress: UnityProgress});
     </script>
   </head>
