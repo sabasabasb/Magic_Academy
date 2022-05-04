@@ -16,12 +16,7 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       UnityLoader.SystemInfo.mobile = false;
-      var unityInstance = UnityLoader.instantiate(
-        "unityContainer", "Build/MA_Build.json", {
-          onProgress: UnityProgress,
-          Module: { TOTAL_STACK: 6 * 1024 * 1024 }
-        }
-      );
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/MA_Build.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
